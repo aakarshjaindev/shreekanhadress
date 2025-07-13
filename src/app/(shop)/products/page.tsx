@@ -1,9 +1,11 @@
+"use client"
+
 import Link from 'next/link'
 
 const products = [
-  {
-    id: 1,
-    name: 'Golden Glow Dress',
+
+import Link from 'next/link'
+import NextImage from 'next/image'
     price: 500,
     category: 'dress',
     image: '/demopic1.jpg',
@@ -64,18 +66,6 @@ const products = [
     category: 'special',
     image: '/demo3 (2).jpg',
   },
-  {
-    id: 10,
-    name: 'Brand Logo',
-    price: 0,
-    category: 'logo',
-    image: '/logo.jpg',
-  },
-]
-
-"use client"
-
-import Image from 'next/image'
 
 export default function ProductsPage() {
   return (
@@ -86,7 +76,7 @@ export default function ProductsPage() {
           <Link key={product.id} href={`/products/${product.id}`}>
             <div className="group bg-white rounded-lg shadow-md p-4 flex flex-col items-center opacity-0 translate-y-8 animate-fade-in" style={{animationDelay: `${idx * 80}ms`, animationFillMode: 'forwards'}}>
               <div className="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden w-full flex items-center justify-center">
-                <Image src={product.image} alt={product.name} width={220} height={220} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+                <NextImage src={product.image} alt={product.name} width={220} height={220} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-900">{product.name}</h3>
               <p className="text-blue-700 font-bold">{product.price > 0 ? `₹${product.price.toLocaleString()}` : '—'}</p>
@@ -108,7 +98,7 @@ export default function ProductsPage() {
       <div className="mt-16 flex flex-col items-center">
         <h2 className="text-2xl font-bold mb-4 text-blue-700">Payment Details</h2>
         <div className="w-full max-w-md bg-white rounded-lg shadow p-4 flex flex-col items-center">
-          <Image src="/payment.jpg" alt="Payment Details" width={400} height={250} className="rounded-md object-contain" />
+          <NextImage src="/payment.jpg" alt="Payment Details" width={400} height={250} className="rounded-md object-contain" />
         </div>
       </div>
     </div>
