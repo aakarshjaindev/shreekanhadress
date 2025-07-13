@@ -7,14 +7,14 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 group">
-            <Image src="/logo.png" alt="Logo" width={36} height={36} className="rounded-full shadow" />
-            <span className="text-2xl font-bold text-pink-600 group-hover:text-pink-700 transition-colors drop-shadow-sm" style={{textShadow: '0 1px 6px rgba(0,0,0,0.10)'}}>Krishna Poshak</span>
+            <Image src="/logo.png" alt="Logo" width={36} height={36} className="rounded-full" />
+            <span className="text-2xl font-bold text-blue-700 group-hover:text-blue-800 transition-colors">Krishna Poshak</span>
           </Link>
           <div className="flex items-center space-x-6">
-            <Link href="/products" className="font-semibold text-gray-900 hover:text-pink-600 transition-colors drop-shadow-sm" style={{textShadow: '0 1px 6px rgba(0,0,0,0.10)'}}>Products</Link>
-            <Link href="/categories" className="font-semibold text-gray-900 hover:text-pink-600 transition-colors drop-shadow-sm" style={{textShadow: '0 1px 6px rgba(0,0,0,0.10)'}}>Categories</Link>
-            <Link href="/about" className="font-semibold text-gray-900 hover:text-pink-600 transition-colors drop-shadow-sm" style={{textShadow: '0 1px 6px rgba(0,0,0,0.10)'}}>About</Link>
-            <Link href="/cart" className="font-semibold text-gray-900 hover:text-pink-600 transition-colors drop-shadow-sm" style={{textShadow: '0 1px 6px rgba(0,0,0,0.10)'}}>Cart</Link>
+            <Link href="/products" className="font-semibold text-gray-900 hover:text-blue-700 transition-colors">Products</Link>
+            <Link href="/categories" className="font-semibold text-gray-900 hover:text-blue-700 transition-colors">Categories</Link>
+            <Link href="/about" className="font-semibold text-gray-900 hover:text-blue-700 transition-colors">About</Link>
+            <Link href="/cart" className="font-semibold text-gray-900 hover:text-blue-700 transition-colors">Cart</Link>
           </div>
         </div>
       </nav>
