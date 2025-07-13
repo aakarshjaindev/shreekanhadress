@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
@@ -44,27 +45,44 @@ export default function Home() {
 
   return (
     <div className="pt-20">
-      <section className="min-h-screen flex items-center bg-gradient-to-b from-orange-50 to-white">
+      <section className="min-h-screen flex items-center bg-gradient-to-r from-pink-100 to-yellow-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div ref={heroRef}>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Discover Divine{" "}
-                <span className="text-orange-600">Krishna Poshak</span>
+              <Image
+                src="/logo.png"
+                alt="Krishna Poshak Logo"
+                width={120}
+                height={120}
+                className="mb-6 rounded-full shadow-lg"
+                priority
+              />
+              <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4 text-center">
+                🌟 Roshan ho gaye Kanha Ji 🌟
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Exquisite traditional clothing crafted with devotion and premium
-                materials.
-              </p>
+              <h2 className="text-2xl font-semibold mb-4 text-center">Brighten Your Devotion with Handmade LED Dresses for Laddu Gopal Ji</h2>
+              <p className="mb-6 text-center">Shop our unique LED light dresses to bring a glow to your Kanha Ji's charm! Each dress includes a beautifully crafted <strong>mukut</strong> (crown) as well.</p>
               <Link
-                href="/products"
-                className="bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-colors"
+                href="#shop"
+                className="bg-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-600 transition-colors"
               >
-                Explore Collection
+                Shop Now
               </Link>
             </div>
-            <div ref={productRef} className="h-[500px]">
-              <Canvas>
+            <div ref={productRef} className="h-[500px] flex flex-col items-center justify-center">
+              <div className="flex flex-wrap gap-4 justify-center mb-4">
+                <Image src="/demopic1.jpg" alt="Featured Product" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demopic1 (1) (1).jpg" alt="Product 2" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demopic1 (1) (2).jpg" alt="Product 3" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demopic1 (1) (1) (1).jpg" alt="Product 4" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demopic2 (1) (1).jpg" alt="Product 5" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demopic2 (1) (1) (1).jpg" alt="Product 6" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demo3 (1).jpg" alt="Product 7" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/demo3 (2).jpg" alt="Product 8" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/logo.jpg" alt="Product 9" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+                <Image src="/photo-collage.png.png" alt="Product 10" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
+              </div>
+              <Canvas style={{ width: 350, height: 200 }}>
                 <Scene />
               </Canvas>
             </div>
@@ -72,42 +90,70 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section id="shop" className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Featured Categories
+          <h2 className="text-4xl font-bold text-center mb-12 text-pink-600">
+            Our Collection
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {["Dhoti", "Kurta", "Accessories"].map((category) => (
-              <div
-                key={category}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
-                <div className="h-64 bg-gray-100"></div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{category}</h3>
-                  <p className="text-gray-600 mb-4">
-                    Explore our collection of premium{" "}
-                    {category.toLowerCase()}
-                  </p>
-                  <Link
-                    href={`/categories/${category.toLowerCase()}`}
-                    className="text-orange-600 font-semibold hover:text-orange-700"
-                  >
-                    View Collection →
-                  </Link>
-                </div>
-              </div>
-            ))}
+            {/* Golden Glow Dress */}
+            <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+              <Image src="/demopic1.jpg" alt="Golden Glow Dress" width={220} height={220} className="rounded mb-4 object-cover" />
+              <h4 className="text-lg font-semibold">Golden Glow Dress</h4>
+              <p className="text-pink-600 font-bold mb-2">₹500 <span className="text-green-600">(₹50 OFF for first-time users!)</span></p>
+              <p className="text-gray-700">Free Shipping included!</p>
+              <p className="text-gray-700">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
+            </div>
+            {/* Royal Blue Shine */}
+            <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+              <Image src="/demopic2 (1) (1).jpg" alt="Royal Blue Shine" width={220} height={220} className="rounded mb-4 object-cover" />
+              <h4 className="text-lg font-semibold">Royal Blue Shine</h4>
+              <p className="text-pink-600 font-bold mb-2">₹500 <span className="text-green-600">(₹50 OFF for first-time users!)</span></p>
+              <p className="text-gray-700">Free Shipping included!</p>
+              <p className="text-gray-700">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
+            </div>
+            {/* Pink Sparkle Delight */}
+            <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+              <Image src="/demopic1 (1) (2).jpg" alt="Pink Sparkle Delight" width={220} height={220} className="rounded mb-4 object-cover" />
+              <h4 className="text-lg font-semibold">Pink Sparkle Delight</h4>
+              <p className="text-pink-600 font-bold mb-2">₹500 <span className="text-green-600">(₹50 OFF for first-time users!)</span></p>
+              <p className="text-gray-700">Free Shipping included!</p>
+              <p className="text-gray-700">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-orange-50">
+      <section className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-12">
+          <h2 className="text-4xl font-bold mb-12 text-pink-600">
             Why Choose Krishna Poshak?
           </h2>
+      {/* Payment Section */}
+      <section id="payment" className="bg-yellow-100 py-10 px-4 text-center">
+        <h3 className="text-2xl font-bold mb-4">Payment Details</h3>
+        <p className="mb-2">Scan the QR code using PhonePe, Google Pay, or any UPI app:</p>
+        <div className="flex justify-center mb-4">
+          <Image src="/file.svg" alt="PhonePe QR Code" width={240} height={240} className="w-60 h-60" />
+        </div>
+        <p className="mb-2">PhonePe Number: <strong>9560594751</strong></p>
+        <p className="mb-2">UPI ID: <strong>kajaljain7@ybl</strong></p>
+        <p className="mt-4 text-green-700 font-semibold">🎉 Special Offer: First-time users get ₹50 OFF!</p>
+        <p className="text-gray-700">(Shipping is absolutely FREE)</p>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-pink-100 py-10 px-4 text-center">
+        <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
+        <p className="mb-2">📞 Phone: +91-9560594751</p>
+        <p className="mb-2">📱 WhatsApp: <a href="https://wa.me/919560594751" className="text-pink-600 underline">Chat on WhatsApp</a></p>
+        <p className="mb-2">📸 Instagram: <a href="https://instagram.com/shreekanhadress" className="text-pink-600 underline">@shreekanhadress</a></p>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-yellow-200 py-4 text-center text-sm">
+        © 2025 Shree Kanha Dress. All rights reserved.
+      </footer>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
