@@ -35,7 +35,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-900">
           <p>&copy; {new Date().getFullYear()} Krishna Poshak. All rights reserved.</p>
         </div>
       </div>

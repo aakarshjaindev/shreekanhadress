@@ -45,10 +45,18 @@ export default function Home() {
 
   return (
     <div className="pt-20">
-      <section className="min-h-screen flex items-center bg-white">
-        <div className="container mx-auto px-4">
+      <section className="min-h-screen flex items-center bg-white relative overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="/WhatsApp Video 2025-07-10 at 22.06.37_35eb764b.mp4"
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div ref={heroRef}>
+            <div ref={heroRef} className="bg-white/80 rounded-xl p-8 shadow-lg">
               <Image
                 src="/logo.png"
                 alt="Krishna Poshak Logo"
@@ -69,7 +77,7 @@ export default function Home() {
                 Shop Now
               </Link>
             </div>
-            <div ref={productRef} className="h-[500px] flex flex-col items-center justify-center">
+            <div ref={productRef} className="h-[500px] flex flex-col items-center justify-center bg-white/80 rounded-xl p-8 shadow-lg">
               <div className="flex flex-wrap gap-4 justify-center mb-4">
                 <Image src="/demopic1.jpg" alt="Featured Product" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
                 <Image src="/demopic1 (1) (1).jpg" alt="Product 2" width={150} height={150} className="rounded-xl shadow object-cover" style={{ maxHeight: 150 }} />
@@ -88,6 +96,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="absolute inset-0 bg-black/30 z-5 pointer-events-none" />
       </section>
 
       <section id="shop" className="py-20 bg-white">
@@ -174,7 +183,7 @@ export default function Home() {
             ].map((feature) => (
               <div key={feature.title} className="p-6">
                 <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-gray-900">{feature.description}</p>
               </div>
             ))}
           </div>

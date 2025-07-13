@@ -1,11 +1,12 @@
 "use client"
 
 import Link from 'next/link'
+import NextImage from 'next/image'
 
 const products = [
-
-import Link from 'next/link'
-import NextImage from 'next/image'
+  {
+    id: 1,
+    name: 'Golden Glow Dress',
     price: 500,
     category: 'dress',
     image: '/demopic1.jpg',
@@ -66,7 +67,14 @@ import NextImage from 'next/image'
     category: 'special',
     image: '/demo3 (2).jpg',
   },
-
+  {
+    id: 10,
+    name: 'Brand Logo',
+    price: 0,
+    category: 'logo',
+    image: '/logo.jpg'
+  }
+];
 export default function ProductsPage() {
   return (
     <div className="container mx-auto px-4 py-24">
