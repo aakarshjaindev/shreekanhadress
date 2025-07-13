@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <div className="pt-20">
-      <section className="min-h-screen flex items-center bg-gradient-to-r from-pink-100 to-yellow-100">
+      <section className="min-h-screen flex items-center bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div ref={heroRef}>
@@ -57,14 +57,14 @@ export default function Home() {
                 className="mb-6 rounded-full shadow-lg"
                 priority
               />
-              <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4 text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4 text-center">
                 🌟 Roshan ho gaye Kanha Ji 🌟
               </h1>
-              <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800 drop-shadow-md" style={{textShadow: '0 2px 8px rgba(0,0,0,0.10)'}}>Brighten Your Devotion with Handmade LED Dresses for Laddu Gopal Ji</h2>
-              <p className="mb-6 text-center text-gray-900 drop-shadow-md" style={{textShadow: '0 2px 8px rgba(0,0,0,0.12)'}}>Shop our unique LED light dresses to bring a glow to your Kanha Ji's charm! Each dress includes a beautifully crafted <strong>mukut</strong> (crown) as well.</p>
+              <h2 className="text-2xl font-semibold mb-4 text-center text-gray-900">Brighten Your Devotion with Handmade LED Dresses for Laddu Gopal Ji</h2>
+              <p className="mb-6 text-center text-gray-700">Shop our unique LED light dresses to bring a glow to your Kanha Ji's charm! Each dress includes a beautifully crafted <strong>mukut</strong> (crown) as well.</p>
               <Link
                 href="#shop"
-                className="bg-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-600 transition-colors"
+                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
               >
                 Shop Now
               </Link>
@@ -90,9 +90,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="shop" className="py-20 bg-yellow-50">
+      <section id="shop" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-pink-700 drop-shadow-md">
+          <h2 className="text-4xl font-bold text-center mb-12 text-blue-700 drop-shadow-md">
             Our Collection
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
               <Image src="/demopic1.jpg" alt="Golden Glow Dress" width={220} height={220} className="rounded mb-4 object-cover" />
               <h4 className="text-lg font-semibold text-gray-900">Golden Glow Dress</h4>
-              <p className="text-pink-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
+              <p className="text-blue-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
               <p className="text-gray-800">Free Shipping included!</p>
               <p className="text-gray-800">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
               <Image src="/demopic2 (1) (1).jpg" alt="Royal Blue Shine" width={220} height={220} className="rounded mb-4 object-cover" />
               <h4 className="text-lg font-semibold text-gray-900">Royal Blue Shine</h4>
-              <p className="text-pink-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
+              <p className="text-blue-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
               <p className="text-gray-800">Free Shipping included!</p>
               <p className="text-gray-800">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
               <Image src="/demopic1 (1) (2).jpg" alt="Pink Sparkle Delight" width={220} height={220} className="rounded mb-4 object-cover" />
               <h4 className="text-lg font-semibold text-gray-900">Pink Sparkle Delight</h4>
-              <p className="text-pink-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
+              <p className="text-blue-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
               <p className="text-gray-800">Free Shipping included!</p>
               <p className="text-gray-800">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
             </div>
@@ -124,13 +124,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-yellow-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-12 text-pink-600">
+          <h2 className="text-4xl font-bold mb-12 text-blue-700">
             Why Choose Krishna Poshak?
           </h2>
       {/* Payment Section */}
-      <section id="payment" className="bg-yellow-100 py-10 px-4 text-center">
+      <section id="payment" className="bg-gray-50 py-10 px-4 text-center">
         <h3 className="text-2xl font-bold mb-4 text-gray-900">Payment Details</h3>
         <p className="mb-2 text-gray-900">Scan the QR code using PhonePe, Google Pay, or any UPI app:</p>
         <div className="flex justify-center mb-4">
@@ -138,20 +138,20 @@ export default function Home() {
         </div>
         <p className="mb-2 text-gray-900">PhonePe Number: <strong className="text-gray-900">9560594751</strong></p>
         <p className="mb-2 text-gray-900">UPI ID: <strong className="text-gray-900">kajaljain7@ybl</strong></p>
-        <p className="mt-4 text-green-700 font-semibold">🎉 Special Offer: First-time users get ₹50 OFF!</p>
+        <p className="mt-4 text-blue-700 font-semibold">🎉 Special Offer: First-time users get ₹50 OFF!</p>
         <p className="text-gray-800">(Shipping is absolutely FREE)</p>
       </section>
 
       {/* Contact Section */}
-      <section className="bg-pink-100 py-10 px-4 text-center">
+      <section className="bg-gray-50 py-10 px-4 text-center">
         <h3 className="text-2xl font-bold mb-4 text-gray-900">Get in Touch</h3>
         <p className="mb-2 text-gray-900">📞 Phone: +91-9560594751</p>
-        <p className="mb-2 text-gray-900">📱 WhatsApp: <a href="https://wa.me/919560594751" className="text-pink-700 underline font-semibold">Chat on WhatsApp</a></p>
-        <p className="mb-2 text-gray-900">📸 Instagram: <a href="https://instagram.com/shreekanhadress" className="text-pink-700 underline font-semibold">@shreekanhadress</a></p>
+        <p className="mb-2 text-gray-900">📱 WhatsApp: <a href="https://wa.me/919560594751" className="text-blue-700 underline font-semibold">Chat on WhatsApp</a></p>
+        <p className="mb-2 text-gray-900">📸 Instagram: <a href="https://instagram.com/shreekanhadress" className="text-blue-700 underline font-semibold">@shreekanhadress</a></p>
       </section>
 
       {/* Footer */}
-      <footer className="bg-yellow-200 py-4 text-center text-sm">
+      <footer className="bg-gray-100 py-4 text-center text-sm">
         © 2025 Shree Kanha Dress. All rights reserved.
       </footer>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
