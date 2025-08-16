@@ -72,9 +72,8 @@ export default function Home() {
               <p className="mb-6 text-center text-gray-700">Shop our unique LED light dresses to bring a glow to your Kanha Ji's charm! Each dress includes a beautifully crafted <strong>mukut</strong> (crown) as well.</p>
               <Link
                 href="#shop"
-                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
-              >
-                Shop Now
+                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">
+                Get for Free
               </Link>
             </div>
             <div ref={productRef} className="h-[500px] flex flex-col items-center justify-center bg-white/80 rounded-xl p-8 shadow-lg">
@@ -109,25 +108,22 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
               <Image src="/demopic1.jpg" alt="Golden Glow Dress" width={220} height={220} className="rounded mb-4 object-cover" />
               <h4 className="text-lg font-semibold text-gray-900">Golden Glow Dress</h4>
-              <p className="text-blue-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
-              <p className="text-gray-800">Free Shipping included!</p>
-              <p className="text-gray-800">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
+              <p className="text-blue-700 font-bold mb-2">Free</p>
+              <p className="text-gray-800">Available for free!</p>
             </div>
             {/* Royal Blue Shine */}
             <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
               <Image src="/demopic2 (1) (1).jpg" alt="Royal Blue Shine" width={220} height={220} className="rounded mb-4 object-cover" />
               <h4 className="text-lg font-semibold text-gray-900">Royal Blue Shine</h4>
-              <p className="text-blue-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
-              <p className="text-gray-800">Free Shipping included!</p>
-              <p className="text-gray-800">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
+              <p className="text-blue-700 font-bold mb-2">Free</p>
+              <p className="text-gray-800">Available for free!</p>
             </div>
             {/* Pink Sparkle Delight */}
             <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
               <Image src="/demopic1 (1) (2).jpg" alt="Pink Sparkle Delight" width={220} height={220} className="rounded mb-4 object-cover" />
               <h4 className="text-lg font-semibold text-gray-900">Pink Sparkle Delight</h4>
-              <p className="text-blue-700 font-bold mb-2">₹500 <span className="text-green-700">(₹50 OFF for first-time users!)</span></p>
-              <p className="text-gray-800">Free Shipping included!</p>
-              <p className="text-gray-800">Pay via UPI: kajaljain7@ybl or PhonePe Number: 9560594751</p>
+              <p className="text-blue-700 font-bold mb-2">Free</p>
+              <p className="text-gray-800">Available for free!</p>
             </div>
           </div>
         </div>
@@ -138,31 +134,6 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-12 text-blue-700">
             Why Choose Krishna Poshak?
           </h2>
-      {/* Payment Section */}
-      <section id="payment" className="bg-gray-50 py-10 px-4 text-center">
-        <h3 className="text-2xl font-bold mb-4 text-gray-900">Payment Details</h3>
-        <p className="mb-2 text-gray-900">Scan the QR code using PhonePe, Google Pay, or any UPI app:</p>
-        <div className="flex justify-center mb-4">
-          <Image src="/file.svg" alt="PhonePe QR Code" width={240} height={240} className="w-60 h-60" />
-        </div>
-        <p className="mb-2 text-gray-900">PhonePe Number: <strong className="text-gray-900">9560594751</strong></p>
-        <p className="mb-2 text-gray-900">UPI ID: <strong className="text-gray-900">kajaljain7@ybl</strong></p>
-        <p className="mt-4 text-blue-700 font-semibold">🎉 Special Offer: First-time users get ₹50 OFF!</p>
-        <p className="text-gray-800">(Shipping is absolutely FREE)</p>
-      </section>
-
-      {/* Contact Section */}
-      <section className="bg-gray-50 py-10 px-4 text-center">
-        <h3 className="text-2xl font-bold mb-4 text-gray-900">Get in Touch</h3>
-        <p className="mb-2 text-gray-900">📞 Phone: +91-9560594751</p>
-        <p className="mb-2 text-gray-900">📱 WhatsApp: <a href="https://wa.me/919560594751" className="text-blue-700 underline font-semibold">Chat on WhatsApp</a></p>
-        <p className="mb-2 text-gray-900">📸 Instagram: <a href="https://instagram.com/shreekanhadress" className="text-blue-700 underline font-semibold">@shreekanhadress</a></p>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-100 py-4 text-center text-sm">
-        © 2025 Shree Kanha Dress. All rights reserved.
-      </footer>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -189,6 +160,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section className="bg-gray-50 py-10 px-4 text-center">
+        <h3 className="text-2xl font-bold mb-4 text-gray-900">Get in Touch</h3>
+        <p className="mb-2 text-gray-900">📞 Phone: +91-9560594751</p>
+        <p className="mb-2 text-gray-900">📱 WhatsApp: <a href="https://wa.me/919560594751" className="text-blue-700 underline font-semibold">Chat on WhatsApp</a></p>
+        <p className="mb-2 text-gray-900">📸 Instagram: <a href="https://instagram.com/shreekanhadress" className="text-blue-700 underline font-semibold">@shreekanhadress</a></p>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 py-4 text-center text-sm">
+        © 2025 Shree Kanha Dress. All rights reserved.
+      </footer>
+
     </div>
   );
 }
